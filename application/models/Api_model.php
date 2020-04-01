@@ -11,7 +11,7 @@
 		{
 			$this->db->where("id_barang", $id);
 			$query = $this->db->get('barang');
-			return $this->result_array();
+			return $query->result_array();
 		}
 	}
 ?>
